@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Flask-project') {
             steps {
-                sh 'echo toor | sudo -S docker-compose up -d'
+                sh 'sudo docker-compose up -d'
             }
         }
     }
