@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Flask-project') {
             steps {
-                sh 'docker-compose up -d'
+                sh 'COMPOSE_HTTP_TIMEOUT=200 docker-compose up -d'
             }
         }
     }
